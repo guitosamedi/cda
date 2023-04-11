@@ -1,0 +1,6 @@
+*.class         # ignorer tous les fichiers ayant l'extension "
+.class"!test.class     # suivre le fichier test.class malgré la règle précédente
+/conf           # ignorer le répertoire "conf" situé à la racine du dépôt
+target/         # ignorer tous les répertoires "target"
+src/*.scala     # ignorer les fichiers *.scala du répertoire src
+src/**/*.scala  # ignorer les fichiers *.scala du répertoire src et des sous répertoires
