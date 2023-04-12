@@ -1,0 +1,47 @@
+body {
+    background-color: aquamarine;
+}
+/* Header */
+header {
+    color: blueviolet;
+}
+
+/* Séléction par descendance */
+header nav > ul > li {
+    border: 1px solid black;
+}
+
+/* Groupement */
+header,
+footer {
+    border: 5px solid red;
+}
+
+/* Séléction de class */
+.menu {
+    color: green;
+}
+/* Séléction ID */
+
+#link1 {
+    color: yellow;
+}
+
+/* Pseudo Element */
+.menu:hover {
+    background-color:pink;
+}
+
+/* Ajout un contenu au début des éléments définis */
+a:before {
+    content:" DEBUT : "
+}
+/* Ajout un contenu à la fin des éléments définis */
+a:after {
+    content:" : FIN"
+}
+
+/* Séléction par attribut avec expression régulière*/
+a[href^="01"]{
+    font-style:italic;
+}
