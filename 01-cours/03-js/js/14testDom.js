@@ -8,7 +8,7 @@ h1.setAttribute("class", "toto");
 //h1.hidden = true;
 console.log(`h1 : ` + h1);
 //h1.remove();
-
+ 
 //création d'un élément du dom
 let h2 = document.createElement("h2");
 h2.innerText = "Titre de niveau 2";

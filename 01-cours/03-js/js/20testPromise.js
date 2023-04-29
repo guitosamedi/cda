@@ -10,7 +10,7 @@ function testPromise() {
         resolve("Promesse 1 tenue : Tout va bien");
       } else reject("Promesse 1 non tenue : C'est la cata");
     }, 2000);
-  })
+  });
 }
 /**
  * Exemple de fonction qui retourne instance de promesse
@@ -24,7 +24,7 @@ function testPromise2() {
         resolve("Promesse 2 tenue : Tout va bien ");
       } else reject("Promesse 2 non tenue : C'est la cata");
     }, 2000);
-  })
+  });
 }
 /**
  * Exemple de fonction qui retourne instance de promesse
@@ -38,7 +38,7 @@ function testPromise3() {
         resolve("Promesse 3 tenue : Tout va bien ");
       } else reject("Promesse 3 non tenue : C'est la cata");
     }, 2000);
-  })
+  });
 }
 /* testPromise()
   .then((msg) => {
@@ -61,9 +61,9 @@ async function testAppelPromise() {
     const msg1 = await testPromise();
     // si le code ci-dessous est exécuté, c'est que la promesse de testPromise a été tenue
     const msg2 = await testPromise2();
-     // si le code ci-dessous est exécuté, c'est que la promesse de testPromise a été tenue
+    // si le code ci-dessous est exécuté, c'est que la promesse de testPromise a été tenue
     const msg3 = await testPromise3();
-     // si le code ci-dessous est exécuté, c'est que la promesse de testPromise a été tenue
+    // si le code ci-dessous est exécuté, c'est que la promesse de testPromise a été tenue
     console.log(msg1, msg2, msg3);
   } catch (error) {
     console.error("Erreur attrapée : ", error);

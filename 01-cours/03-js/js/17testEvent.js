@@ -10,5 +10,4 @@ function manageBtnClick(event) {
   console.log(`clic sur le bouton`);
   createMarkup("p", "Lorem ipsum ....", document.body);
 }
-test();
-
+test(); 

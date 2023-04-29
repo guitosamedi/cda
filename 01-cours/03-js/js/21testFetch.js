@@ -53,4 +53,4 @@ for (let item of api.then(data => data.json())) {
   createMarkup("option", `${item.country}`, select, [
     { name: "value", value: "" },
   ]);
-} */
+} */ 

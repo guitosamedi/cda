@@ -24,17 +24,24 @@ class SlideShow {
   createImage() {
     // création d'une image
     const img = document.createElement("img");
-    img.setAttribute("src", `https://picsum.photos/${this.width}/${this.height}?id=${Math.random() * 1000}`);
+    img.setAttribute(
+      "src",
+      `https://picsum.photos/${this.width}/${this.height}?id=${
+        Math.random() * 1000
+      }`
+    );
     return img;
   }
   render() {
-    const sectionSlideshow = this.createMarkup("section", "", document.body, [{ name: "id", value: "slideshow" }]);
+    const sectionSlideshow = this.createMarkup("section", "", document.body, [
+      { name: "id", value: "slideshow" },
+    ]);
     // Rendre les images visibles en les ajoutant à ma section d'id slideshow
     this.images.forEach((image, index) => {
       // seule la première image ne sera pas cachée (utilisation de hidden)
       if (index != 0) image.hidden = true;
       sectionSlideshow.appendChild(image);
-    })
+    });
     console.log(`this`, this);
   }
   createMarkup(markup_name, text, parent, attributes = []) {
@@ -42,15 +49,18 @@ class SlideShow {
     markup.textContent = text;
     parent.appendChild(markup);
     attributes.forEach((attribute) => {
-      if (attribute && attribute.hasOwnProperty("name") && attribute.hasOwnProperty("value")) {
+      if (
+        attribute &&
+        attribute.hasOwnProperty("name") &&
+        attribute.hasOwnProperty("value")
+      ) {
         markup.setAttribute(attribute.name, attribute.value);
       }
-    })
+    });
 
     return markup;
   }
   animateSlideShow() {
-
     setInterval(() => {
       // récupère l'index de l'image actuellement affichée et mettre hidden à true
       let current_index_image = this.getCurrentImageIndex();
@@ -68,7 +78,7 @@ class SlideShow {
       if (!image.hidden) {
         current_index = index;
       }
-    })
+    });
     return current_index;
   }
 }
