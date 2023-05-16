@@ -8,7 +8,7 @@ public class ExerciceBouclesEtTests {
        for (int i =0; i<monTableau.length;i++) {
             System.out.println(monTableau[i]);
         }
-       
+
         // Afficher ordre inversé
         for (int i=0; i< monTableau.length/2; i++){
             int monTableauInverse = monTableau[i];
