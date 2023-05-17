@@ -10,9 +10,7 @@ public class TestPersonne {
         Personne p2 = new Personne("Clint", "Eastwood");
 
         System.out.println("Je suis " + p1.prenom + " " + p1.nom + " et je vis à " + adresse.numeroRue + adresse.libelleRue + adresse.codePostal + adresse.ville );
-        
         System.out.println("Je suis " + p2.prenom + " " + p2.nom );
-
     }
 
 }
