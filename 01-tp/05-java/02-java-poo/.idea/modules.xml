@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/06-java-poo.iml" filepath="$PROJECT_DIR$/06-java-poo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/approche-objet/approche-objet.iml" filepath="$PROJECT_DIR$/approche-objet/approche-objet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mes-tests/mes-tests.iml" filepath="$PROJECT_DIR$/mes-tests/mes-tests.iml" />
+    </modules>
+  </component>
+</project>
