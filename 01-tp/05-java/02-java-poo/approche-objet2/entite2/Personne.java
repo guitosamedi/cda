@@ -4,14 +4,21 @@ import entites.AdressePostale;
 
 public class Personne {
 
-        public String nom;
         public String prenom;
-        public AdressePostale address;
+        public String nom;
+        public AdressePostale adresse;
 
-        public Personne(String prenom, String nom, AdressePostale address) {
-                this.nom = nom;
+        public Personne(String prenom, String nom) {
+
                 this.prenom = prenom;
-                this.address = address;
+                this.nom = nom;
+                this.adresse = adresse;
+        }
+        public Personne(String prenom, String nom, AdressePostale adresse) {
+
+                this.prenom = prenom;
+                this.nom = nom;
+                this.adresse = adresse;
         }
 
 
