@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/01-java-approche/01-java-approche.iml" filepath="$PROJECT_DIR$/01-java-approche/01-java-approche.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-java-poo/02-java-poo.iml" filepath="$PROJECT_DIR$/02-java-poo/02-java-poo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/05-java.iml" filepath="$PROJECT_DIR$/.idea/05-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/02-java-poo/approche-objet/approche-objet.iml" filepath="$PROJECT_DIR$/02-java-poo/approche-objet/approche-objet.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-java-poo/mes-tests/mes-tests.iml" filepath="$PROJECT_DIR$/02-java-poo/mes-tests/mes-tests.iml" />
     </modules>
   </component>

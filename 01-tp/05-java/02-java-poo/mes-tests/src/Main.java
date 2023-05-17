@@ -1,11 +1,9 @@
-import fr.address.AdressePostale;
+import entites.Personne;
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
 
-        AdressePostale adr = new AdressePostale();
-        adr.numeroRue = 15;
-        System.out.println("i = " + i);
+        Personne p1 = new Personne("DUPONT", 30);
+        System.out.println("Je suis " + p1.nom + " et j'ai " + p1.age + " ans");
 
     }
 }

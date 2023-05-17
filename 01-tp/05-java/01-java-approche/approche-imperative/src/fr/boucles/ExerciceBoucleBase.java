@@ -9,9 +9,9 @@ public class ExerciceBoucleBase {
         }
 
         // Afficher mon nom 20 fois
-        String guitoSamedi = " Guito Samedi";
+        String me = " Guito Samedi";
         for (int i=0; i<20; ++i){
-            System.out.println(guitoSamedi);
+            System.out.println(me);
         }
 
         // Afficher les nombre pairs jusqu'à 100
@@ -19,7 +19,7 @@ public class ExerciceBoucleBase {
             System.out.println(i);
         }
 
-        // Afficher les nombre imppairs jusqu'à 99
+        // Afficher les nombre impairs jusqu'à 99
         for (int i=1; i<=99; i++){
             if (i % 2 != 0) {
                 System.out.println(i);
