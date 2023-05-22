@@ -4,13 +4,10 @@ package general;
  * Class Fille
  */
 public class Chat extends Mammifere{
+    public String nourriture;
 
-
-    public static void main(String[] args) {
-        @Override
-        public void TypeAnimal() {
-            //super.TypeAnimal(); // ??
-            System.out.println("test");
-        }
+    public void communication (){
+        System.out.println("miaouww");
     }
+
 }

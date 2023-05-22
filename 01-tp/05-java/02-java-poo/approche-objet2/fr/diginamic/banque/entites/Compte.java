@@ -1,36 +1,37 @@
 package fr.diginamic.banque.entites;
 
 public class Compte {
-    private double soldeCompte;
-
-    private int numeroCompte;
-
-    public Compte(double soldeCompte, int numeroCompte){
-        this.numeroCompte = numeroCompte;
-        this.soldeCompte = soldeCompte;
+    //private double soldeCompte; // Mauvaise pratique ne pas suffixer le nom de la variable du nom de la Class
+    private double solde;
+    // private String numeroCompte; // Mauvaise pratique ne pas suffixer le nom de la variable du nom de la Class
+    private String numero;
+    public Compte(double soldeCompte, String numeroCompte){
+        this.numero = numeroCompte;
+        this.solde = soldeCompte;
     }
 
+    // Redefinition de la méthode toString appartenant à la classe Object
     @Override
     public String toString() {
         return "Compte{" +
-                "soldeCompte=" + soldeCompte +
-                ", numeroCompte=" + numeroCompte +
+                "soldeCompte=" + solde +
+                ", numeroCompte=" + numero +
                 '}';
     }
 
     public double getSoldeCompte() {
-        return soldeCompte;
+        return solde;
     }
 
     public void setSoldeCompte(double soldeCompte) {
-        this.soldeCompte = soldeCompte;
+        this.solde = soldeCompte;
     }
 
-    public long getNumeroCompte() {
-        return numeroCompte;
+    public String getNumeroCompte() {
+        return numero;
     }
 
-    public void setNumeroCompte(int numeroCompte) {
-        this.numeroCompte = numeroCompte;
+    public void setNumeroCompte(String numeroCompte) {
+        this.numero = numeroCompte;
     }
 }
