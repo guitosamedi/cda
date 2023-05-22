@@ -13,10 +13,7 @@ public class Compte {
     // Redefinition de la méthode toString appartenant à la classe Object
     @Override
     public String toString() {
-        return "Compte{" +
-                "soldeCompte=" + solde +
-                ", numeroCompte=" + numero +
-                '}';
+        return "Compte : " + "solde=" + solde + ", numero=" + numero;
     }
 
     public double getSoldeCompte() {
