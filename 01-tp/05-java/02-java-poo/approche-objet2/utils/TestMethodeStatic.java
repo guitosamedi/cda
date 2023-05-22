@@ -6,7 +6,10 @@ public class TestMethodeStatic {
         int number =   Integer.parseInt(chaine);
         int a= 10;
         int b = 98;
-        int afficher= Integer.max(a, b);
-        System.out.println(afficher);
+        int afficherMax= Integer.max(a, b);
+        int afficherMin= Integer.min(a, b);
+        System.out.println(number);
+        System.out.println(afficherMax);
+        System.out.println(afficherMin);
     }
 }
