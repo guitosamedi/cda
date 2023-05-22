@@ -6,8 +6,11 @@ package general;
 public class Chat extends Mammifere{
     public String nourriture;
 
-    public void communication (){
-        System.out.println("miaouww");
+    // Constructeur doit avoir la même signature (mot clé de la Classe + nom de la Classe)
+    public Chat(String nourriture){
+        this.nourriture = nourriture;
     }
 
+
 }
+
