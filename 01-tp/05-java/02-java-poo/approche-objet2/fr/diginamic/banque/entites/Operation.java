@@ -1,7 +1,7 @@
 package fr.diginamic.banque.entites;
 
 public abstract class Operation {
-    protected String date;
+    private String date;
     protected double montant;
 
     public Operation (String date, double montant){
@@ -9,6 +9,14 @@ public abstract class Operation {
     this.montant = montant;
     }
     public abstract String getType();
+
+    @Override
+    public String toString() {
+        return "Operation{" +
+                "date='" + date + '\'' +
+                ", montant=" + montant + ", type=" +getType() +
+                '}';
+    }
 
     public String getDate() {
         return date;
@@ -26,8 +34,6 @@ public abstract class Operation {
         this.montant = montant;
     }
 
-    public void afficherTypeOperation()
-    {
-        System.out.println(getType());
-    }
+    public abstract double recalculerSolde(double ancienSolde);
+
 }
