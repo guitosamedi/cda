@@ -83,5 +83,7 @@ public class TestOperation {
         for (Operation operation : operations){
             solde = operation.recalculerSolde(solde);
         }
+
+        System.out.println(" Solde: " + solde);
     }
 }
