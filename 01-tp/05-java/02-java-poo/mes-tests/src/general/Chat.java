@@ -8,6 +8,7 @@ public class Chat extends Mammifere{
 
     // Constructeur doit avoir la même signature (mot clé de la Classe + nom de la Classe)
     public Chat(String nourriture){
+        super(String getAdn(), );
         this.nourriture = nourriture;
     }
 

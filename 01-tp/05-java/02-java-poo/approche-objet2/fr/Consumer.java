@@ -1,9 +1,9 @@
 package fr;
 
-import fr.listes.Ville;
+import fr.listes.Villes;
 
 @FunctionalInterface
 public interface Consumer {
 
-    void exec(Ville v);
+    void exec(Villes v);
 }

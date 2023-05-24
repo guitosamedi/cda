@@ -1,25 +1,38 @@
 package fr.listes;
 
-public class Ville {
+public class Ville implements Comparable<Ville>{
     private String nom;
-    private int pop;
+    private int hab;
 
-    public Ville(String nom, int pop) {
+    public Ville(String nom, int hab) {
         this.nom = nom;
-        this.pop = pop;
+        this.hab = hab;
     }
 
     public Ville(String nom) {
         this.nom = nom;
-        this.pop = pop;
     }
 
     @Override
     public String toString() {
         return "Ville{" +
                 "nom='" + nom + '\'' +
-                ", pop=" + pop +
+               ", hab=" + hab +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Ville o) {
+       // return this.nom.compareTo(o.getNom());
+        if (this.hab > o.getHab()) {
+            return 1;
+        }else if (this.hab < o.getHab()){
+            return -1;
+        }
+        return 0;
+
+        // Aussi possible en une ligne
+       // return this.hab -o.getHab();
     }
 
     public String getNom() {
@@ -30,12 +43,11 @@ public class Ville {
         this.nom = nom;
     }
 
-    public int getPop() {
-        return pop;
+    public int getHab() {
+        return hab;
     }
 
-    public void setPop(int pop) {
-        this.pop = pop;
+    public void setHab(int hab) {
+        this.hab = hab;
     }
-
 }
