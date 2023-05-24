@@ -1,6 +1,4 @@
-package entites;
-
-import entite2.Personne;
+package fr.entites;
 
 public class TestPersonne {
     public static void main(String[] args) {

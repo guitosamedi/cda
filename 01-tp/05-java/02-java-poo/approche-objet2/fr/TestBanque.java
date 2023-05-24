@@ -1,8 +1,8 @@
-package fr.diginamic.banque;
+package fr;
 
-import fr.diginamic.banque.entites.Compte;
-import fr.diginamic.banque.entites.LivretA;
-import fr.diginamic.banque.entites.CompteTaux;
+import fr.banque.Compte;
+import fr.banque.LivretA;
+import fr.banque.CompteTaux;
 
 public class TestBanque {
     public static void main(String[] args) {

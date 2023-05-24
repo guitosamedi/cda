@@ -1,4 +1,4 @@
-package fr.diginamic.banque.entites;
+package fr.banque;
 
 public class LivretA extends Compte {
     private double taux;

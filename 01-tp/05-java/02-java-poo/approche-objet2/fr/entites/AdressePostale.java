@@ -1,4 +1,4 @@
-package entites;
+package fr.entites;
 
 public class AdressePostale {
     int numeroRue;

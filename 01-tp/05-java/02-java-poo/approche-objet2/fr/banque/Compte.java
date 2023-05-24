@@ -1,4 +1,4 @@
-package fr.diginamic.banque.entites;
+package fr.banque;
 
 public class Compte {
     //private double soldeCompte; // Mauvaise pratique ne pas suffixer le nom de la variable du nom de la Class

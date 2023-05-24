@@ -1,4 +1,4 @@
-package entites;
+package fr.entites;
 
 public class TestAdressePostale {
     public static void main(String[] args) {
