@@ -1,7 +1,6 @@
 package fr.maps;
 
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class CreationMap {
     public static <Iterator> void main(String[] args) {
