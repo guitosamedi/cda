@@ -19,11 +19,11 @@ public class LectureFichier {
         boolean estFichier = Files.isRegularFile(path);
         boolean estLisible = Files.isReadable(path);
         List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
-        System.out.println("existe: " + exists + "fichier: " + exists + "lecture: " + exists);
+        System.out.println("existe: " + exists + "fichier: " + estFichier + "lecture: " + estLisible);
         System.out.println("**************************************");
         // System.out.println(lines);
 
-        String[] tokens = lines.split(";");
+       // String[] tokens = lines.split(";");
         //villes.add(new Ville("Paris", 75000, "île de France", 5555666333 ));
 
 
