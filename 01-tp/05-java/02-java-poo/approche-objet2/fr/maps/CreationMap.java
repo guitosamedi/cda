@@ -16,15 +16,14 @@ public class CreationMap {
         mapSalaires.put("1", s1);
         mapSalaires.put("2", s2);
         mapSalaires.put("3", s3);
-        mapSalaires.put("5", s4);
-        mapSalaires.put("6", s5);
+        mapSalaires.put("4", s4);
+        mapSalaires.put("5", s5);
 
         System.out.println(mapSalaires.size());
-        
+        System.out.println(mapSalaires);
         for (Salaire salaire : mapSalaires.values()){
             System.out.println(salaire);
         }
-
 
     }
 }
