@@ -11,7 +11,7 @@ public class TestDates {
 
         /************* COURS *************/
 
-       /* // appel instance Date
+       /** appel instance Date
         Date d = new Date();
         System.out.println("Date instance : " + d);
 
@@ -39,7 +39,7 @@ public class TestDates {
         // Parser une date :  Formater un string en date !! nécessite throws ParseException dans la Classe
         String chaineAParser = "01/01/1010 10:00:00";
         Date dateResultat = formateur.parse(chaineAParser);
-        System.out.println("Formater un string en date : " + dateResultat);*/
+        System.out.println("Formater un string en date : " + dateResultat); **/
 
 
         /************* TP *************/
