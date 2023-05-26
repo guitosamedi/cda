@@ -4,9 +4,20 @@ public class Ville implements Comparable<Ville>{
     private String nom;
     private int hab;
 
-    public Ville(String nom, int hab) {
+    private Continent continent;
+
+    public Ville(String nom, int hab, Continent continent) {
         this.nom = nom;
         this.hab = hab;
+        this.continent = continent;
+    }
+
+    public Continent getContinent() {
+        return continent;
+    }
+
+    public void setContinent(Continent continent) {
+        this.continent = continent;
     }
 
     public Ville(String nom) {
@@ -18,6 +29,7 @@ public class Ville implements Comparable<Ville>{
         return "Ville{" +
                 "nom='" + nom + '\'' +
                ", hab=" + hab +
+                ", continent=" + continent +
                 '}';
     }
 
