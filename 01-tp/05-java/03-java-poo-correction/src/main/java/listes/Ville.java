@@ -7,18 +7,30 @@ public class Ville implements Comparable<Ville> {
     private String nom;
     private int pop;
 
+    public static int nbCommunes = 36000;
+    public static final Ville PARIS = new Ville("Paris", 2500000);
+
+    /**
+     *
+     * @param nom
+     * @param pop
+     */
     public Ville(String nom, int pop) {
         this.nom = nom;
         this.pop = pop;
     }
 
+
     @Override
     public boolean equals(Object o) {
-        if (!(o instanceof Ville)){
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
             return false;
         }
         Ville ville = (Ville) o;
-        return Objects.equals(nom, ville.getNom()) && Objects.equals(pop, ville.getPop());
+        return pop == ville.pop && Objects.equals(nom, ville.nom);
     }
 
     @Override
@@ -26,6 +38,11 @@ public class Ville implements Comparable<Ville> {
         return Objects.hash(nom, pop);
     }
 
+    /**
+     * Cette méthode est super bien
+     * @param x x
+     * @param y y
+     */
     public static void afficherNbDepartements(int x, int y){
         // Une méthode static a le droit d'utiliser d'autres méthodes static et des attributs statics.
     }

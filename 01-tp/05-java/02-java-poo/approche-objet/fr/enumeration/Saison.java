@@ -6,16 +6,16 @@ public enum Saison {
     AUTOMNE(3,"Automne"),
     HIVER(4,"Hiver");
     private String label;
-    private float index;
+    private int index;
 
-    private Saison(float index, String label) {
+    private Saison(int index, String label) {
         this.index =index;
         this.label =label;
     }
 
     static Saison rechercheSaison(String libelle) {
         Saison[] saisons = Saison.values();
-        //String message = "Aucun résultat"; // à voir message erreur
+        //String message = "Aucun résultat"; // à voir pour afficher message erreur
         for (Saison saison : saisons) {
             if (saison.getLabel().equalsIgnoreCase(libelle)) {
                 return saison;
@@ -23,6 +23,14 @@ public enum Saison {
 
         }
         return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Saison{" +
+                "label='" + label + '\'' +
+                ", index=" + index +
+                '}';
     }
 
     public String getLabel() {
@@ -37,7 +45,7 @@ public enum Saison {
         return index;
     }
 
-    public void setIndex(float index) {
+    public void setIndex(int index) {
         this.index = index;
     }
 }

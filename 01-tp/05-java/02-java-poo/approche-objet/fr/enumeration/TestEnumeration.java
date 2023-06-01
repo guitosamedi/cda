@@ -8,7 +8,7 @@ public class TestEnumeration {
         Saison[] saisons = Saison.values();
 
         for (Saison saison : saisons ){
-            System.out.println(saison.getLabel());
+            System.out.println(saison);
         }
 
         String nom = String.valueOf("ETE");

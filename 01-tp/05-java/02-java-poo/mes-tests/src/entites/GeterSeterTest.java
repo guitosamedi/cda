@@ -1,3 +1,5 @@
+package entites;
+
 import entites.Personne;
 public class GeterSeterTest {
     public String matricule;

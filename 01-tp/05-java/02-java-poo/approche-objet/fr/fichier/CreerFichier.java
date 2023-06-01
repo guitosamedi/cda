@@ -27,11 +27,10 @@ public class CreerFichier {
         List<String> AllLines = Files.readAllLines(pathSource, StandardCharsets.UTF_8);
         ArrayList<String> lines = new ArrayList<>(AllLines);
 
-        for (int i = 0; i< 101; i++){
-            //System.out.println(lines.get(i));
+        for (int i = 0 ; i < 101 ; i++){
+            System.out.println(lines.get(i));
             lines.add(lines.get(i));
-
-         }
+        }
         // On utilise pas le même fichier donc pas d'APPEND nécessaire
         Files.write(pathDestination, lines, StandardOpenOption.APPEND);
     }
