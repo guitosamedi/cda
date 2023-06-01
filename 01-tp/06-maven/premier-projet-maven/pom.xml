@@ -7,7 +7,16 @@
     <groupId>dev</groupId>
     <artifactId>premier-projet-maven</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.lalyos</groupId>
+            <artifactId>jfiglet</artifactId>
+            <version>0.0.3</version>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
