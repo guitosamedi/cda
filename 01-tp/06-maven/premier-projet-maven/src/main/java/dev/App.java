@@ -1,9 +1,19 @@
 package dev;
-
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.ResourceBundle;
+import com.github.lalyos.jfiglet.FigletFont;
+/**
+ * Hello world!
+ *
+ */
 public class App {
     public static void main(String[] args) {
-        System.out.println("App");
+        String titre = ResourceBundle.getBundle("application").getString("titre");
+        String asciiArt = FigletFont.convertOneLine(titre);
+        System.out.println(asciiArt);
+
+        // affichage de l'environnement
+        String environnement = ResourceBundle.getBundle("application").getString
+                ("environnement");
+        System.out.println("Environnement : " + environnement);
     }
 }
