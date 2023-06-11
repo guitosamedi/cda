@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c67945d-c9c4-4694-a380-22e623e17fc0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/java/fr/diginamic/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/java/fr/diginamic/console/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/java/fr/diginamic/service/AppService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-conception-database-relationelle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-conception-database-relationelle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-conception-database-relationelle/jo-modelisation-bdd.loo" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-conception-database-relationelle/jo-modelisation-bdd.loo" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2Qy555cZel6r7JwsJz8VxeRYkqq" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/_dev/04_CDA/05_CODE/cda/02-work/01-tp/07-test-unitaire/demo-logging",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/_dev/04_CDA/05_CODE/cda/02-work/01-tp/06-maven/demo-logging/src/main/java/fr/diginamic/m0203/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_dev\04_CDA\05_CODE\cda\02-work\01-tp\07-test-unitaire\demo-logging" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.console.App" />
+      <module name="demo-logging" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.console.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c67945d-c9c4-4694-a380-22e623e17fc0" name="Changes" comment="" />
+      <created>1686312795164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686312795164</updated>
+      <workItem from="1686312796175" duration="1630000" />
+      <workItem from="1686314898804" duration="839000" />
+      <workItem from="1686317663938" duration="726000" />
+      <workItem from="1686499196024" duration="4129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+</project>
