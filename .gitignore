@@ -45,28 +45,9 @@ logs
 tmp
 *.tmp
 
-# IDE related
-
-.idea
-.vscode
-
-.next
-.turbo/
-
-out/
-
-
-
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-*.ipynb
-.favorites.json
-.turbo
-
-.graphqlconfig
-schema.graphql
