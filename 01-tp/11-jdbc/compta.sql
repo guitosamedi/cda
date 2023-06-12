@@ -31,7 +31,7 @@ insert into COMPO (ID_ART, ID_BON, QTE) values (8, 3, 15);
 insert into BON (ID, NUMERO, DELAI, ID_FOU, DATE_CMDE) VALUES (4, 4, 2, 3, '2019-04-05 11:40:00');
 insert into COMPO (ID_ART, ID_BON, QTE) values (4, 4, 10);
 insert into COMPO (ID_ART, ID_BON, QTE) values (6, 4, 15);
-insert into compo (ID_ART, ID_BON, QTE) values (8, 4, 8);
+insert into COMPO (ID_ART, ID_BON, QTE) values (8, 4, 8);
 insert into BON (ID, NUMERO, DELAI, ID_FOU, DATE_CMDE) VALUES (5, 5, 7, 2, '2019-05-15 14:45:00');
 insert into COMPO (ID_ART, ID_BON, QTE) values (2, 5, 17);
 insert into COMPO (ID_ART, ID_BON, QTE) values (3, 5, 13);
