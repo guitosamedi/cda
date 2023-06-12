@@ -3,6 +3,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+
 public class TestProperties {
     private static final String DB_URL;
     private static final String DB_LOGIN;
@@ -26,13 +27,13 @@ public class TestProperties {
     }
     */
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         // TestProperties test = new TestProperties();
 
         try (Connection cnx = DriverManager.getConnection(DB_URL, DB_LOGIN, DB_PWD)) {
             System.out.println(cnx);
-        } catch (SQLException a) {
-            throw new RuntimeException("error connecting DB !");
+        } catch (SQLException e) {
+            throw new RuntimeException("Error connecting DB !");
         }
     }
 }
