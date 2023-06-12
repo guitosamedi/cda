@@ -1,3 +1,72 @@
-node_modules
+
 target
 .env
+# All node_modules directories
+node_modules
+**/node_modules
+.yarnrc.yml
+
+# All secrets
+**/.env.local
+**/.env.*.local
+**/.env
+
+# By default all git files
+.git
+.gitattributes
+.github
+
+# Tools caches
+.cache/*
+tsconfig.tsbuildinfo
+.eslintcache
+
+# Yarn
+!.yarnrc.yml
+!.yarn/plugins
+!.yarn/releases
+
+# Used when building with nextjs (next-eslint)
+!.eslintrc.base.json
+!.prettierignore
+!.prettierrc.js
+!.eslintignore
+
+# npm
+!.npmrc
+
+# Docker related
+
+# Log files
+logs
+*.log
+
+# Temp files
+tmp
+*.tmp
+
+# IDE related
+
+.idea
+.vscode
+
+.next
+.turbo/
+
+out/
+
+
+
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+*.ipynb
+.favorites.json
+.turbo
+
+.graphqlconfig
+schema.graphql
