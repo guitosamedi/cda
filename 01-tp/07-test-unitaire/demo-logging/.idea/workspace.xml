@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c67945d-c9c4-4694-a380-22e623e17fc0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/java/fr/diginamic/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/java/fr/diginamic/console/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/java/fr/diginamic/service/AppService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../06-maven/demo-logging/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10-conception-database-relationelle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-conception-database-relationelle/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10-conception-database-relationelle/jo-modelisation-bdd.loo" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-conception-database-relationelle/jo-modelisation-bdd.loo" afterDir="false" />
-    </list>
+    <list default="true" id="1c67945d-c9c4-4694-a380-22e623e17fc0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,25 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/_dev/04_CDA/05_CODE/cda/02-work/01-tp/07-test-unitaire/demo-logging",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/_dev/04_CDA/05_CODE/cda/02-work/01-tp/06-maven/demo-logging/src/main/java/fr/diginamic/m0203/Main.java",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/_dev/04_CDA/05_CODE/cda/02-work/01-tp/07-test-unitaire/demo-logging&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/_dev/04_CDA/05_CODE/cda/02-work/01-tp/06-maven/demo-logging/src/main/java/fr/diginamic/m0203/Main.java&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_dev\04_CDA\05_CODE\cda\02-work\01-tp\07-test-unitaire\demo-logging" />
@@ -106,6 +93,7 @@
       <workItem from="1686314898804" duration="839000" />
       <workItem from="1686317663938" duration="726000" />
       <workItem from="1686499196024" duration="4129000" />
+      <workItem from="1686641959750" duration="158000" />
     </task>
     <servers />
   </component>
