@@ -1,5 +1,6 @@
 package fr.diginamic.jdbc.entites;
 
+import fr.diginamic.jdbc.dal.jdbc.FournisseurDAO;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -8,8 +9,6 @@ public class Fournisseur {
     private static final String DB_URL;
     private static final String DB_LOGIN;
     private static final String DB_PWD;
-
-    //private int[] tab;
 
     static {
         ResourceBundle bundle = ResourceBundle.getBundle("db");
@@ -35,28 +34,10 @@ public class Fournisseur {
 
     public static void main(String[] args) throws SQLException {
 
-        listerFournisseurs();
+        System.out.println("wolrd");
     }
-    private static void listerFournisseurs() throws SQLException {
 
-        try (Connection connection = DriverManager.getConnection(DB_URL, DB_LOGIN, DB_PWD);
-
-            Statement st = connection.createStatement()) {
-            ResultSet curseur = st.executeQuery("SELECT * FROM FOURNISSEUR");
-            ArrayList<Fournisseur> fournisseurs = new ArrayList<>();
-
-                while (curseur.next()) {
-                    Integer id= curseur.getInt("ID");
-                    String nom= curseur.getString("NOM");
-                    Fournisseur fournisseur = new Fournisseur(id, nom);
-                    //System.out.println(fournisseur);
-                }
-
-            } catch (SQLException e) {
-                System.err.println(e.getMessage());
-            }
-    }
-    public static void creerFournisseur(String nomFournisseur) {
+  /*  public static void creerFournisseur(String nomFournisseur) {
 
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_LOGIN, DB_PWD);
 
@@ -88,5 +69,5 @@ public class Fournisseur {
         } catch (SQLException e) {
             System.err.println(e.getMessage());
         }
-    }
+    }*/
 }
