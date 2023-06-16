@@ -1,7 +1,6 @@
 package fr.diginamic.entites;
 import jakarta.persistence.*;
-
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 
@@ -13,10 +12,10 @@ public class Emprunt {
     private Integer id;
 
     @Column(name = "DATE_DEBUT")
-    private Date dateDebut;
+    private LocalDateTime dateDebut;
 
     @Column(name = "DATE_FIN")
-    private Date dateFin;
+    private LocalDateTime dateFin;
 
     @Column(name = "DELAI")
     private Integer delai;
@@ -27,14 +26,14 @@ public class Emprunt {
 
     @ManyToMany
     @JoinTable(name="compo",
-    joinColumns = @JoinColumn(name="ID_LIV", referencedColumnName = "ID"),
-    inverseJoinColumns = @JoinColumn(name="ID_EMP", referencedColumnName = "ID")
+    joinColumns = @JoinColumn(name="ID_EMP", referencedColumnName = "ID"),
+    inverseJoinColumns = @JoinColumn(name="ID_LIV", referencedColumnName = "ID")
     )
 
     private Set<Livre> livres;
 
     public Emprunt() {}
-    public Emprunt(Integer id, Date dateDebut, Date dateFin, Integer delai, Client client) {
+    public Emprunt(Integer id, LocalDateTime dateDebut, LocalDateTime dateFin, Integer delai, Client client) {
         this.id = id;
         this.dateDebut = dateDebut;
         this.dateFin = dateFin;
@@ -50,19 +49,19 @@ public class Emprunt {
         this.id = id;
     }
 
-    public Date getDateDebut() {
+    public LocalDateTime getDateDebut() {
         return dateDebut;
     }
 
-    public void setDateDebut(Date dateDebut) {
+    public void setDateDebut(LocalDateTime dateDebut) {
         this.dateDebut = dateDebut;
     }
 
-    public Date getDateFin() {
+    public LocalDateTime getDateFin() {
         return dateFin;
     }
 
-    public void setDateFin(Date dateFin) {
+    public void setDateFin(LocalDateTime dateFin) {
         this.dateFin = dateFin;
     }
 
@@ -82,14 +81,24 @@ public class Emprunt {
         this.client = client;
     }
 
+
+    public Set<Livre> getLivres() {
+        return livres;
+    }
+
+    public void setLivres(Set<Livre> livres) {
+        this.livres = livres;
+    }
+
     @Override
     public String toString() {
-        return "Emprunt{" +
-                "id=" + id +
-                ", dateDebut=" + dateDebut +
-                ", dateFin=" + dateFin +
-                ", delai=" + delai +
-                ", client=" + client +
-                '}';
+        final StringBuffer sb = new StringBuffer("Emprunt{");
+        sb.append("id=").append(id);
+        sb.append(", dateDebut=").append(dateDebut);
+        sb.append(", dateFin=").append(dateFin);
+        sb.append(", delai=").append(delai);
+        sb.append(", livres=").append(livres);
+        sb.append('}');
+        return sb.toString();
     }
 }

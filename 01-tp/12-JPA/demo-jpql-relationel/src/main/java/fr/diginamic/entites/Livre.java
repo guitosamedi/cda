@@ -1,6 +1,7 @@
 package fr.diginamic.entites;
 import jakarta.persistence.*;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -17,7 +18,7 @@ public class Livre {
     private  String auteur;
 
     @ManyToMany(mappedBy = "livres")
-    private Set<Emprunt> emprunts;
+    private Set<Emprunt> emprunts = new HashSet<>();
 
     public Livre() {}
 
@@ -33,14 +34,6 @@ public class Livre {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Set<Emprunt> getEmprunts() {
-        return emprunts;
-    }
-
-    public void setEmprunts(Set<Emprunt> emprunts) {
-        this.emprunts = emprunts;
     }
 
     public String getTitre() {

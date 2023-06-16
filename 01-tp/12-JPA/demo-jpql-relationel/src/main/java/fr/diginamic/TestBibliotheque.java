@@ -6,28 +6,32 @@ public class TestBibliotheque {
     public static void main(String[] args) {
         try (EntityManagerFactory emf = Persistence.createEntityManagerFactory("demo-jpql");
              EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
+             em.getTransaction().begin();
 
-
-            // AFFICHER LISTE LIVRE
+/*
+            // JPDQL AFFICHER LISTE LIVRE
            TypedQuery<Livre> allLivre = em.createQuery("select l from Livre l", Livre.class);
             for(Livre livre : allLivre.getResultList()){
                 System.out.println(livre);
             }
 
-            /*
-            // AFFICHER LISTE CLIENT
-            TypedQuery<Client> allClient = em.createQuery("select c from Client c", Client.class);
-            for(Client client : allClient.getResultList()){
+            Livre livre = em.find(Livre.class, 2);
+            if (null != livre) {
+                System.out.println(livre);
+            }
+*/
+            Client client = em.find(Client.class, 2);
+            if (null != client) {
+            // Emprunts et client associé
                 System.out.println(client);
+                //System.out.println(client.getEmprunts());
             }
 
-            // AFFICHER LISTE EMPRUNTS
-            TypedQuery<Emprunt> allEmprunt = em.createQuery("select e from Emprunt e", Emprunt.class);
-            for(Emprunt emprunt : allEmprunt.getResultList()){
+            Emprunt emprunt = em.find(Emprunt.class, 4);
+            if (null != emprunt) {
+                //Emprunt et livre associé
                 System.out.println(emprunt);
             }
-            */
 
             em.getTransaction().commit();
 

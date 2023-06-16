@@ -19,16 +19,17 @@ public class Client {
 
 
     @OneToMany(mappedBy = "client")
-    private Set<Emprunt> emprunts;
+    private Set<Emprunt> emprunts= new HashSet<>();
 
     public Client(){}
 
-    public Client(Integer id, String nom, String prenom, Set<Emprunt> emprunts) {
+    public Client(int id, String nom, String prenom, Set<Emprunt> emprunts) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.emprunts = emprunts;
     }
+
 
     public Set<Emprunt> getEmprunts() {
         return emprunts;
@@ -64,11 +65,12 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Client{" +
-                "id=" + id +
-                ", nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
-                ", emprunts=" + emprunts +
-                '}';
+        final StringBuffer sb = new StringBuffer("Client{");
+        sb.append("id=").append(id);
+        sb.append(", nom='").append(nom).append('\'');
+        sb.append(", prenom='").append(prenom).append('\'');
+        sb.append(", emprunts=").append(emprunts);
+        sb.append('}');
+        return sb.toString();
     }
 }
